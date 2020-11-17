@@ -1,0 +1,32 @@
+.navbar{
+	background-color: #5e44b5;
+}
+
+.nav-link{
+	font-size: 16px;
+	margin-right: 30px;
+}
+
+.home{
+	background: no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+@media (max-width: 768px){
+	.home img{
+		font-size: 300%;
+	}
+
+	.fa{
+		font-size: 20px;
+		padding: 10px;
+	}
+	.icon{
+		padding-top: 5%;
+		max-width: 100px;
+	}
+}

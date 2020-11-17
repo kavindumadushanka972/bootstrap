@@ -1,0 +1,322 @@
+/*to make visible this in every browser*/
+@charset "UFT-8"; 
+
+* { margin : 0; padding: 0; }/*to remove browser settings already.This removes all spacings in page*/
+
+*{text-decoration: none;}/*to remove underlines in  all hyperlinks*/
+
+p{margin-bottom: 20px;margin-top: 10px; color: #635c4b}
+a{color: red;}
+
+.clearfix{overflow: auto} /*to inherit colours and other stuff to child classes from main class*/
+
+.wrapper{/*wrapper class settings*/
+	margin : 0 auto;
+	width: 1000px;
+}
+.top-bar{/*top bar settings*/
+	width: 1000px;
+	background: maroon;
+}
+.top-bar-links{
+	float: left;/*if we use 'float' keyword,properties from parent class vanishes,thats why we used .clearfix class*/
+}
+.top-bar-links ul{
+	margin: 15px;
+	list-style: none;/*to remove bullets*/
+}
+.top-bar-links ul li{
+	display: inline-block;/*to get all to a one line*/
+	padding: 0 10px;/*top and bottom zero and left and right 10px*/
+	border-right: 1px solid white;
+}
+.top-bar-links ul li:last-child{/*to remove border next to last element*/
+	border-right: none;
+}
+.top-bar-links ul li a{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+.top-bar-links ul li a:hover{
+	color: orange;
+}
+.site-search{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	margin: 15px;
+	float: right;
+	background: white;
+	border-radius: 10px;/*to make the boarder round*/
+}
+
+.site-search input{
+	padding-top: 3px;
+	border: 0;
+	float: left;
+}
+
+.site-search button{
+	float: right;
+	width: 18px;
+	height:18px;
+	background: url(../img/icons/search.png);
+	border:0;
+}
+
+.logo{
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.logo h1{
+	font-variant: small-caps;/*font*/
+	font-size: 48px; 
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+
+.socialmedia{
+	margin-top: 50px;
+	float: right;
+	
+}
+.socialmedia ul{
+	list-style: none;
+	margin-right: 20px;
+}
+
+.socialmedia ul li{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.socialmedia ul li a{
+	background: #444; /*background colour grey*/
+	color: white; /*what inside are white colour*/
+	padding: 6px;
+	border-radius: 18px;
+}
+.socialmedia ul li a:hover{
+	background: orange; /*change colour to orange when we take mouse on it*/
+}
+
+nav{
+	margin-top: 20px;
+	/*background: #000;*//*black*/
+	background: linear-gradient(#0d0d0d,#404040,#0d0d0d);
+	text-align:center; /*make center in navigation panel*/
+	border-radius: 5px;
+	box-shadow: 4px 4px 4px #aaa; /*shadow under navi-bar*/
+}
+
+nav ul{
+	list-style: none;
+	
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	font-family: 'Roboto', sans-serif;
+	color: white; 
+	text-transform: uppercase;/* make all to upper case*/
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block; /*otherwise margin doesnt work correctly*/
+}
+nav ul li a:hover{
+	color: orange;
+}
+div.intro{
+	width: 970px;
+	margin: 15px;
+	margin-bottom: 0;
+}
+
+div.introimage{
+	width: 200px;
+	float: left;
+}
+div.introimage img{
+	float: left;
+}
+div.introtext{
+	font-family: 'Cabin', sans-serif;
+	width: 570px;
+	float: right;
+}
+div.intro h1{
+	font-weight: normal;
+	padding-top: 100px;
+	font-size: 72px;
+	text-transform: uppercase;
+}
+div.introtext p{
+	font-size: 18px; 
+}
+div.introtext a{
+	text-transform: uppercase;
+	color: red;
+	float: right;
+}
+div.homecontent{
+	width: 1000px;
+	background: #eee;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+div.home-col{
+	margin-left: 15px;
+	width: 313.33px;
+	float: left;
+}
+div.home-col h2{
+	font-family: 'Roboto', sans-serif;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: normal;
+	font-size: 30px;
+}
+div.home-col a{
+	float: right;
+}
+div.home-col img{
+	width: 313.33px;
+}
+div.services{
+	margin-bottom: 43px;
+}
+div.services img{
+	width: 64px;
+	float: left;
+	margin-right: 15px;
+}
+div.services p{
+	margin-top: 0;
+}
+div.quote{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+div.quote i{
+	float: left;
+}
+
+div.quote h3{
+	float: left;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+div.quote p{
+	clear: both; /*this command will appear paragraph under the topic,check commenting this command to see the difference*/
+}
+div.footer{
+	float: left;
+	width: 1000px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+div.footercol{
+	color: #635c4b;
+	width: 231.25px;
+	float: left;
+	/*display: inline-block;*/
+	margin-left: 18px;
+	border-top: 1px solid grey;
+}
+div.footercol h4{
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+div.tweet a{
+	float: left;
+}
+div.tweet p{
+	font-size: 16px;
+}
+ul.quicklinks{
+	list-style: none;
+	margin-top: 10px;
+}
+/*ul.quicklinks li a::before{ to add some shapes before quicklinks
+	content:"type the shape here";
+}*/
+ul.quicklinks li a{
+	margin-bottom: 10px;
+	display: block;
+	border-bottom: 1px solid grey;
+	padding-bottom: 10px;
+	color: #635c4b;
+}
+ul.quicklinks li a:hover{
+	color: red;
+}
+
+ul.quicklinks i{
+	float: left;
+	padding-right: 5px;
+}
+div.blogpost{
+	clear: both;
+	padding-top: 10px;
+}
+div.blogpost h5{
+	font-size: 18px;
+}
+div.readmore a{
+	float: right;
+}
+form.contact input,form.contact textarea{ /*can do one thing to both input and textarea boxes*/
+	background: #eee;
+	/*color: #635c4b;*/
+	padding:5px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	width: 221.25px; /*width of column is 231.25px, but leftpadding+rightpadding=10px,,then removed it*/
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: inherit; /*make all fonts same in textbox and textareas*/
+}
+form.contact button{
+	background: #eee;
+	color: red;
+	border: none;
+	border-radius: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 16px;
+	font-family: inherit;
+}
+form.contact button:hover{
+	color: black;
+}
+div.copyrights{
+	width: 1000px;
+	background: #eee;
+	float: left;	
+}
+
+div.left{
+	float: left;
+	font-family: inherit;
+	color: #635c4b;
+	margin:20px;
+}
+div.right{
+	float: right;
+	font-family: inherit;
+	color: #635c4b;
+	font-size: 16px;
+	margin: 20px;
+}
